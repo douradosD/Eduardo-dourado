@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio futurista de Eduardo Dourado, Desenvolvedor Full Stack com foco em interfaces modernas, APIs, backend com Node.js e aplicacoes completas."
+    />
+    <meta name="theme-color" content="#040610" />
+    <meta property="og:title" content="Eduardo Dourado | Desenvolvedor Full Stack" />
+    <meta
+      property="og:description"
+      content="Portfolio profissional moderno, responsivo e tecnologico com projetos, stack, formacao e contato."
+    />
+    <title>Eduardo Dourado | Desenvolvedor Full Stack</title>
+    <script type="module">
+      if (import.meta.hot?.on) {
+        import.meta.hot.on('vite:error', (error) => {
+          if (error.err) {
+            console.error([error.err.message, error.err.frame].filter(Boolean).join('\n'))
+          }
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

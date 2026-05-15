@@ -1,0 +1,151 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+@import './styles/effects.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 4 6 16;
+  --surface: 12 17 33;
+  --surface-alt: 16 23 43;
+  --text: 244 247 255;
+  --muted: 160 174 197;
+  --brand: 157 78 221;
+  --accent: 255 138 76;
+}
+
+.light {
+  --bg: 19 27 46;
+  --surface: 31 41 62;
+  --surface-alt: 46 58 84;
+  --text: 241 245 249;
+  --muted: 176 190 212;
+  --brand: 120 53 206;
+  --accent: 234 97 43;
+}
+
+.dark {
+  --bg: 4 6 16;
+  --surface: 12 17 33;
+  --surface-alt: 16 23 43;
+  --text: 244 247 255;
+  --muted: 160 174 197;
+  --brand: 157 78 221;
+  --accent: 255 138 76;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: rgb(var(--bg));
+    color: rgb(var(--text));
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: rgba(var(--brand), 0.32);
+    color: rgb(var(--text));
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-display {
+    font-family: 'Chakra Petch', sans-serif;
+  }
+
+  a,
+  button,
+  input,
+  textarea {
+    outline: none;
+  }
+
+  img {
+    display: block;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply relative mx-auto w-full max-w-7xl px-6 py-24 md:px-8 lg:px-10;
+  }
+
+  .panel {
+    background: linear-gradient(180deg, rgba(var(--surface), 0.84), rgba(var(--surface-alt), 0.64));
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(18px);
+  }
+
+  .glow-border {
+    box-shadow: 0 0 0 1px rgba(var(--brand), 0.22), 0 30px 80px rgba(88, 28, 135, 0.28);
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition duration-300;
+    background: linear-gradient(120deg, rgba(var(--brand), 0.94), rgba(var(--accent), 0.95));
+    box-shadow: 0 18px 40px rgba(120, 53, 206, 0.32);
+  }
+
+  .button-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 24px 50px rgba(120, 53, 206, 0.38);
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border px-5 py-3 text-sm font-semibold uppercase tracking-[0.22em] transition duration-300;
+    border-color: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.04);
+    color: rgb(var(--text));
+  }
+
+  .button-secondary:hover {
+    border-color: rgba(var(--brand), 0.45);
+    color: rgb(255 255 255);
+    box-shadow: 0 0 30px rgba(120, 53, 206, 0.2);
+  }
+
+  .stat-card {
+    @apply rounded-[1.6rem] border border-white/10 px-5 py-5;
+    background: linear-gradient(180deg, rgba(var(--surface), 0.76), rgba(var(--surface-alt), 0.5));
+    backdrop-filter: blur(16px);
+  }
+
+  .progress-track {
+    @apply h-2.5 overflow-hidden rounded-full bg-white/10;
+  }
+
+  .progress-fill {
+    @apply block h-full rounded-full;
+    background: linear-gradient(90deg, rgba(var(--brand), 1), rgba(var(--accent), 1));
+    box-shadow: 0 0 26px rgba(157, 78, 221, 0.4);
+  }
+
+  .input-shell {
+    @apply w-full rounded-[1.3rem] border border-white/10 bg-white/5 px-4 py-3 text-base placeholder:text-slate-500 transition duration-300;
+    color: rgb(var(--text));
+  }
+
+  .input-shell:focus {
+    border-color: rgba(var(--brand), 0.55);
+    box-shadow: 0 0 0 4px rgba(120, 53, 206, 0.14);
+  }
+
+  .text-gradient {
+    background: linear-gradient(120deg, rgb(240 231 255), rgb(var(--brand)), rgb(var(--accent)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
