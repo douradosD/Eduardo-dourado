@@ -1,4 +1,4 @@
-﻿import { footerMessage } from '@/utils/portfolioData'
+﻿﻿import { footerMessage } from '@/utils/portfolioData'
 
 export function Footer() {
   return (
