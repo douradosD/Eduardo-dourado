@@ -1,4 +1,4 @@
-﻿import { ExternalLink, Github, LoaderCircle, Sparkles, Star } from 'lucide-react'
+import { ExternalLink, Github, LoaderCircle, Sparkles, Star } from 'lucide-react'
 
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/SectionHeading'
@@ -21,14 +21,14 @@ export function ProjectsSection() {
       <Reveal>
         <SectionHeading
           eyebrow="Projetos"
-          title="Repositorios dinamicos conectados ao GitHub"
-          description="A secao abaixo e alimentada automaticamente pela API do GitHub para manter o portfolio vivo, atualizado e alinhado com a evolucao real dos projetos."
+          title="Repositórios dinâmicos conectados ao GitHub"
+          description="A seção abaixo é alimentada automaticamente pela API do GitHub para manter o portfólio vivo, atualizado e alinhado com a evolução real dos projetos."
         />
       </Reveal>
 
       <div className="mt-10 flex flex-wrap items-center gap-3 rounded-[1.6rem] border border-white/10 bg-white/5 px-5 py-4 text-sm text-slate-300">
         <Sparkles size={16} className="text-brand-100" />
-        <span>Usuario monitorado:</span>
+        <span>Usuário monitorado:</span>
         <a
           href={`https://github.com/${githubUsername}`}
           target="_blank"
@@ -96,7 +96,7 @@ export function ProjectsSection() {
                     ) : (
                       <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-400">
                         <LoaderCircle size={18} />
-                        Demo em configuracao
+                        Demo em configuração
                       </span>
                     )}
                   </div>

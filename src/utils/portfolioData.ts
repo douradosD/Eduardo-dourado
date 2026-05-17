@@ -58,7 +58,7 @@ export const navigationItems: NavItem[] = [
   { label: 'Home', href: '#home' },
   { label: 'Sobre', href: '#sobre' },
   { label: 'Tecnologias', href: '#tecnologias' },
-  { label: 'Formacao', href: '#formacao' },
+  { label: 'Formação', href: '#formacao' },
   { label: 'Projetos', href: '#projetos' },
   { label: 'Contato', href: '#contato' },
 ]
@@ -66,32 +66,32 @@ export const navigationItems: NavItem[] = [
 export const heroBadges = [
   'Interfaces responsivas de alto impacto',
   'APIs e backend com Node.js',
-  'Experiencias completas e escalaveis',
+  'Experiências completas e escaláveis',
 ]
 
 export const heroStats = [
   { value: '11+', label: 'Tecnologias em destaque' },
   { value: '100%', label: 'Foco em performance e UX' },
-  { value: '24/7', label: 'Evolucao e aprendizado continuo' },
+  { value: '24/7', label: 'Evolução e aprendizado contínuo' },
 ]
 
 export const aboutHighlights: HighlightItem[] = [
   {
-    title: 'Transicao com estrategia',
+    title: 'Transição com estratégia',
     description:
-      'Minha jornada na tecnologia e guiada por disciplina, consistencia e foco em construir valor real com software.',
+      'Minha jornada na tecnologia é guiada por disciplina, consistência e foco em construir valor real com software.',
     icon: Rocket,
   },
   {
-    title: 'Visao full stack',
+    title: 'Visão full stack',
     description:
-      'Conecto experiencia visual, regras de negocio, integracao de APIs e organizacao de arquitetura em produtos profissionais.',
+      'Conecto experiência visual, regras de negócio, integração de APIs e organização de arquitetura em produtos profissionais.',
     icon: Blocks,
   },
   {
     title: 'Aprendizado constante',
     description:
-      'Busco evoluir continuamente em frontend, backend, boas praticas, performance e desenvolvimento moderno.',
+      'Busco evoluir continuamente em frontend, backend, boas práticas, performance e desenvolvimento moderno.',
     icon: Bot,
   },
 ]
@@ -99,53 +99,53 @@ export const aboutHighlights: HighlightItem[] = [
 export const servicePillars: HighlightItem[] = [
   {
     title: 'Frontend moderno',
-    description: 'Landing pages, paineis e interfaces com design refinado, responsivo e focado em conversao.',
+    description: 'Landing pages, painéis e interfaces com design refinado, responsivo e focado em conversão.',
     icon: LayoutTemplate,
   },
   {
     title: 'Backend e APIs',
-    description: 'Estruturas com Node.js, integracoes, regras de negocio e organizacao clara para crescimento.',
+    description: 'Estruturas com Node.js, integrações, regras de negócio e organização clara para crescimento.',
     icon: ServerCog,
   },
   {
     title: 'Qualidade e entrega',
-    description: 'Codigo limpo, componentizacao, manutencao facilitada e experiencia fluida do inicio ao deploy.',
+    description: 'Código limpo, componentização, manutenção facilitada e experiência fluida do início ao deploy.',
     icon: ShieldCheck,
   },
 ]
 
 export const technologies: TechnologyItem[] = [
-  { name: 'HTML5', level: 92, summary: 'Estrutura semantica e acessivel para interfaces modernas.', category: 'Frontend', icon: FileCode2 },
-  { name: 'CSS3', level: 90, summary: 'Layouts fluidos, animacoes e acabamento visual premium.', category: 'Frontend', icon: Wind },
-  { name: 'JavaScript', level: 88, summary: 'Interatividade, consumo de APIs e logica para web apps.', category: 'Frontend', icon: Braces },
-  { name: 'TypeScript', level: 82, summary: 'Escalabilidade, previsibilidade e qualidade de codigo.', category: 'Frontend', icon: BadgeCheck },
-  { name: 'React JS', level: 90, summary: 'Componentizacao, performance e interfaces reutilizaveis.', category: 'Frontend', icon: Atom },
-  { name: 'Tailwind CSS', level: 88, summary: 'Design system rapido com alta consistencia visual.', category: 'Frontend', icon: Wind },
-  { name: 'Python', level: 76, summary: 'Automacoes, fundamentos solidos e evolucao continua.', category: 'Backend', icon: Bot },
-  { name: 'Node.js', level: 84, summary: 'APIs, servicos e aplicacoes full stack conectadas.', category: 'Backend', icon: ServerCog },
-  { name: 'MySQL', level: 78, summary: 'Modelagem de dados e persistencia para projetos reais.', category: 'Banco de dados', icon: Database },
-  { name: 'Git', level: 85, summary: 'Versionamento seguro, colaboracao e historico confiavel.', category: 'Ferramentas', icon: GitBranch },
-  { name: 'GitHub', level: 87, summary: 'Repositorios, portfolio publico e fluxo de entrega.', category: 'Ferramentas', icon: Github },
+  { name: 'HTML5', level: 92, summary: 'Estrutura semântica e acessível para interfaces modernas.', category: 'Frontend', icon: FileCode2 },
+  { name: 'CSS3', level: 90, summary: 'Layouts fluidos, animações e acabamento visual premium.', category: 'Frontend', icon: Wind },
+  { name: 'JavaScript', level: 88, summary: 'Interatividade, consumo de APIs e lógica para web apps.', category: 'Frontend', icon: Braces },
+  { name: 'TypeScript', level: 82, summary: 'Escalabilidade, previsibilidade e qualidade de código.', category: 'Frontend', icon: BadgeCheck },
+  { name: 'React JS', level: 90, summary: 'Componentização, performance e interfaces reutilizáveis.', category: 'Frontend', icon: Atom },
+  { name: 'Tailwind CSS', level: 88, summary: 'Design system rápido com alta consistência visual.', category: 'Frontend', icon: Wind },
+  { name: 'Python', level: 76, summary: 'Automações, fundamentos sólidos e evolução contínua.', category: 'Backend', icon: Bot },
+  { name: 'Node.js', level: 84, summary: 'APIs, serviços e aplicações full stack conectadas.', category: 'Backend', icon: ServerCog },
+  { name: 'MySQL', level: 78, summary: 'Modelagem de dados e persistência para projetos reais.', category: 'Banco de dados', icon: Database },
+  { name: 'Git', level: 85, summary: 'Versionamento seguro, colaboração e histórico confiável.', category: 'Ferramentas', icon: GitBranch },
+  { name: 'GitHub', level: 87, summary: 'Repositórios, portfólio público e fluxo de entrega.', category: 'Ferramentas', icon: Github },
 ]
 
 export const educationItems: EducationItem[] = [
   {
     title: 'Curso de Frontend',
     institution: 'DNC',
-    period: 'Formacao concluida',
-    description: 'Base pratica para construcao de interfaces modernas, responsivas e com foco em experiencia do usuario.',
+    period: 'Formação concluída',
+    description: 'Base prática para construção de interfaces modernas, responsivas e com foco em experiência do usuário.',
   },
   {
     title: 'Curso de Python',
     institution: 'Open Standard',
-    period: 'Formacao concluida',
-    description: 'Fortalecimento da logica de programacao e fundamentos para automacoes e desenvolvimento backend.',
+    period: 'Formação concluída',
+    description: 'Fortalecimento da lógica de programação e fundamentos para automações e desenvolvimento backend.',
   },
   {
     title: 'Engenharia de Software',
-    institution: 'Graduacao em andamento',
+    institution: 'Graduação em andamento',
     period: 'Cursando',
-    description: 'Aprofundamento em arquitetura, processos, qualidade, colaboracao e construcao de software profissional.',
+    description: 'Aprofundamento em arquitetura, processos, qualidade, colaboração e construção de software profissional.',
   },
 ]
 
@@ -177,4 +177,4 @@ export const contactChannels: ContactChannel[] = [
 ]
 
 export const footerMessage =
-  'Construindo experiencias digitais modernas, performaticas e prontas para gerar oportunidades reais.'
+  'Construindo experiências digitais modernas, performáticas e prontas para gerar oportunidades reais.'

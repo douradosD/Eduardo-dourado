@@ -31,7 +31,7 @@ export function LoadingScreen({ isVisible }: LoadingScreenProps) {
                 transition={{ duration: 1.3, repeat: Number.POSITIVE_INFINITY, ease: 'easeInOut' }}
               />
             </div>
-            <p className="text-sm uppercase tracking-[0.4em] text-slate-400">Inicializando experiencia premium</p>
+            <p className="text-sm uppercase tracking-[0.4em] text-slate-400">Inicializando experiência premium</p>
           </div>
         </motion.div>
       ) : null}

@@ -1,4 +1,4 @@
-﻿import axios from 'axios'
+import axios from 'axios'
 
 export interface GitHubRepo {
   id: number
@@ -72,10 +72,10 @@ export function mapGitHubRepoToProject(repo: GitHubRepo): PortfolioProject {
     id: repo.id,
     name: repo.name,
     description:
-      repo.description?.trim() || 'Projeto publicado no GitHub com foco em pratica, evolucao tecnica e entrega funcional.',
+      repo.description?.trim() || 'Projeto publicado no GitHub com foco em prática, evolução técnica e entrega funcional.',
     githubUrl: repo.html_url,
     demoUrl: repo.homepage?.trim() ? repo.homepage : null,
-    technologies: technologies.length > 0 ? technologies : ['Codigo aberto'],
+    technologies: technologies.length > 0 ? technologies : ['Código aberto'],
     stars: repo.stargazers_count,
     updatedAt: repo.updated_at,
   }

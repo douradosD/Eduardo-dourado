@@ -1,4 +1,4 @@
-﻿import { useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import type { FormEvent } from 'react'
 import { ArrowRight, Send } from 'lucide-react'
 
@@ -25,7 +25,7 @@ export function ContactSection() {
   const [feedback, setFeedback] = useState('')
 
   const whatsappLink = useMemo(() => {
-    const text = encodeURIComponent('Ola, Eduardo! Vim pelo seu portfolio e gostaria de conversar sobre um projeto.')
+    const text = encodeURIComponent('Olá, Eduardo! Vim pelo seu portfólio e gostaria de conversar sobre um projeto.')
     return `https://wa.me/5586995953738?text=${text}`
   }, [])
 
@@ -37,15 +37,15 @@ export function ContactSection() {
     event.preventDefault()
 
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
-      setFeedback('Preencha nome, email e mensagem para enviar o contato.')
+      setFeedback('Preencha nome, e-mail e mensagem para enviar o contato.')
       return
     }
 
-    const subject = encodeURIComponent(form.subject.trim() || `Contato via portfolio - ${form.name}`)
+    const subject = encodeURIComponent(form.subject.trim() || `Contato via portfólio - ${form.name}`)
     const body = encodeURIComponent(`Nome: ${form.name}\nEmail: ${form.email}\n\nMensagem:\n${form.message}`)
 
     window.location.href = `mailto:douradosoldado@gmail.com?subject=${subject}&body=${body}`
-    setFeedback('Seu aplicativo de email foi aberto com a mensagem pronta para envio.')
+    setFeedback('Seu aplicativo de e-mail foi aberto com a mensagem pronta para envio.')
     setForm(initialFormState)
   }
 
@@ -55,8 +55,8 @@ export function ContactSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Contato"
-            title="Vamos transformar ideias em experiencias digitais profissionais"
-            description="Estou disponivel para projetos freelance, colaboracoes e oportunidades em tecnologia. Escolha o canal ideal ou envie uma mensagem pelo formulario."
+            title="Vamos transformar ideias em experiências digitais profissionais"
+            description="Estou disponível para projetos freelance, colaborações e oportunidades em tecnologia. Escolha o canal ideal ou envie uma mensagem pelo formulário."
           />
           <div className="mt-8 grid gap-4">
             {contactChannels.map((channel) => (
@@ -99,7 +99,7 @@ export function ContactSection() {
                     value={form.email}
                     onChange={(event) => handleChange('email', event.target.value)}
                     className="input-shell"
-                    placeholder="voce@email.com"
+                    placeholder="você@email.com"
                   />
                 </label>
               </div>
@@ -118,7 +118,7 @@ export function ContactSection() {
                   value={form.message}
                   onChange={(event) => handleChange('message', event.target.value)}
                   className="input-shell min-h-40 resize-none"
-                  placeholder="Conte mais sobre o projeto, vaga ou colaboracao."
+                  placeholder="Conte mais sobre o projeto, vaga ou colaboração."
                 />
               </label>
               <div className="flex flex-col gap-4 sm:flex-row">

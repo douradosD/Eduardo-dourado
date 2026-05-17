@@ -1,4 +1,4 @@
-﻿import { Reveal } from '@/components/Reveal'
+import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/SectionHeading'
 import { aboutHighlights, servicePillars } from '@/utils/portfolioData'
 
@@ -9,8 +9,8 @@ export function AboutSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Sobre"
-            title="Trajetoria guiada por evolucao continua"
-            description="Minha caminhada na programacao e marcada por curiosidade, disciplina e vontade real de construir produtos que unam estetica, desempenho e resultado de negocio."
+            title="Trajetória guiada por evolução contínua"
+            description="Minha trajetória na programação é marcada por curiosidade, disciplina e um objetivo claro: construir soluções digitais que unam estética, performance e impacto de negócio."
           />
         </Reveal>
 
@@ -18,12 +18,12 @@ export function AboutSection() {
           <Reveal delay={0.1}>
             <div className="panel space-y-5 rounded-[2rem] p-8">
               <p className="text-base leading-8 text-slate-300">
-                Venho consolidando minha transicao e crescimento na area de tecnologia com foco em desenvolvimento frontend e backend,
-                transformando estudo continuo em aplicacoes modernas, intuitivas e escalaveis.
+                Tenho consolidado minha transição e evolução na área de tecnologia, atuando entre frontend e backend e transformando
+                estudo contínuo em aplicações modernas, intuitivas e escaláveis.
               </p>
               <p className="text-base leading-8 text-slate-300">
-                Meu objetivo e criar experiencias digitais profissionais, com interfaces impactantes, codigo bem estruturado,
-                integracao entre camadas e atencao aos detalhes que fazem um produto se destacar no mercado.
+                Meu foco é entregar experiências digitais profissionais: interfaces responsivas, código bem estruturado, integração
+                entre camadas e atenção aos detalhes — do layout à arquitetura — para criar produtos que se destacam no mercado.
               </p>
             </div>
           </Reveal>

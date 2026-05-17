@@ -1,4 +1,4 @@
-﻿import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vitest'
 
 import { mapGitHubRepoToProject, type GitHubRepo } from './github'
 
@@ -7,7 +7,7 @@ describe('mapGitHubRepoToProject', () => {
     const repo: GitHubRepo = {
       id: 1,
       name: 'portfolio-react',
-      description: 'Portfolio moderno',
+      description: 'Portfólio moderno',
       html_url: 'https://github.com/douradosD/portfolio-react',
       homepage: 'https://portfolio.dev',
       topics: ['react', 'tailwindcss', 'nodejs'],
@@ -41,7 +41,7 @@ describe('mapGitHubRepoToProject', () => {
     const project = mapGitHubRepoToProject(repo)
 
     expect(project.description).toContain('GitHub')
-    expect(project.technologies).toEqual(['Codigo aberto'])
+    expect(project.technologies).toEqual(['Código aberto'])
     expect(project.demoUrl).toBeNull()
   })
 })

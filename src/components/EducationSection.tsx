@@ -1,4 +1,4 @@
-﻿import { GraduationCap } from 'lucide-react'
+import { GraduationCap } from 'lucide-react'
 
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/SectionHeading'
@@ -9,9 +9,9 @@ export function EducationSection() {
     <section id="formacao" className="section-shell">
       <Reveal>
         <SectionHeading
-          eyebrow="Formacao"
-          title="Base academica e evolucao pratica em tecnologia"
-          description="Minha formacao reforca a construcao de uma carreira tecnica consistente, com aplicacao pratica e foco em entregas cada vez mais profissionais."
+          eyebrow="Formação"
+          title="Base acadêmica e evolução prática em tecnologia"
+          description="Minha formação reforça a construção de uma carreira técnica consistente, com aplicação prática e foco em entregas cada vez mais profissionais."
         />
       </Reveal>
 

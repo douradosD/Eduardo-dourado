@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/SectionHeading'
@@ -10,8 +10,8 @@ export function TechSection() {
       <Reveal>
         <SectionHeading
           eyebrow="Tecnologias"
-          title="Stack orientada a interfaces premium e solucoes completas"
-          description="Cada tecnologia entra como parte de uma entrega maior: interfaces modernas, integracoes solidas, manutencao clara e experiencia de usuario refinada."
+          title="Stack orientada a interfaces premium e soluções completas"
+          description="Cada tecnologia entra como parte de uma entrega maior: interfaces modernas, integrações sólidas, manutenção clara e experiência de usuário refinada."
         />
       </Reveal>
 

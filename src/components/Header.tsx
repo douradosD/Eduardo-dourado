@@ -1,4 +1,4 @@
-﻿import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import { Menu, MoonStar, SunMedium, X } from 'lucide-react'
 
 import { useUiStore } from '@/hooks/useUiStore'
@@ -17,7 +17,7 @@ export function Header({ activeSection, isDark, onToggleTheme }: HeaderProps) {
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6 lg:px-8">
       <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/12 bg-slate-950/55 px-5 py-3 shadow-[0_0_40px_rgba(7,11,26,0.45)] backdrop-blur-xl">
-        <a href="#home" className="flex items-center gap-3" aria-label="Ir para o inicio">
+        <a href="#home" className="flex items-center gap-3" aria-label="Ir para o início">
           <span className="flex h-11 w-11 items-center justify-center rounded-full border border-brand-400/50 bg-brand-500/15 font-display text-sm font-semibold uppercase tracking-[0.35em] text-brand-100">
             ED
           </span>

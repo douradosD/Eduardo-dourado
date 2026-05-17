@@ -1,4 +1,4 @@
-﻿import { useEffect } from 'react'
+import { useEffect } from 'react'
 
 import { AboutSection } from '@/components/AboutSection'
 import { ContactSection } from '@/components/ContactSection'
@@ -30,7 +30,7 @@ export default function Home() {
     if (description) {
       description.setAttribute(
         'content',
-        'Portfolio futurista de Eduardo Dourado, Desenvolvedor Full Stack com foco em interfaces modernas, APIs, backend em Node.js e projetos profissionais.',
+        'Portfólio futurista de Eduardo Dourado, Desenvolvedor Full Stack com foco em interfaces modernas, APIs, backend em Node.js e projetos profissionais.',
       )
     }
 

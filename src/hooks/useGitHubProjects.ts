@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { fetchGitHubProjects, type PortfolioProject } from '@/services/github'
 
@@ -41,7 +41,7 @@ export function useGitHubProjects(username: string, limit = 6) {
         setState({
           projects: [],
           loading: false,
-          error: 'Nao foi possivel carregar os repositorios agora. Tente novamente em instantes.',
+          error: 'Não foi possível carregar os repositórios agora. Tente novamente em instantes.',
         })
       }
     }

@@ -16,7 +16,7 @@ export function HeroSection() {
             transition={{ duration: 0.5 }}
           >
             <Sparkles size={16} />
-            Disponivel para projetos freelance e oportunidades tech
+            Disponível para projetos freelance e oportunidades na área de tecnologia
           </motion.div>
 
           <div className="space-y-6">
@@ -42,8 +42,8 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.26 }}
             >
-              Desenvolvo experiencias web modernas com foco em interfaces responsivas, integracao de APIs,
-              backend com Node.js e aplicacoes completas com acabamento profissional, performance e identidade visual forte.
+              Desenvolvo experiências web modernas com foco em interfaces responsivas, integração de APIs,
+              backend com Node.js e aplicações completas com acabamento profissional, performance e identidade visual forte.
             </motion.p>
           </div>
 
@@ -90,8 +90,8 @@ export function HeroSection() {
           <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-brand-500/30 via-transparent to-accent-500/20 blur-2xl" />
           <div className="panel glow-border relative overflow-hidden rounded-[2rem] p-5">
             <div className="absolute inset-x-6 top-6 flex items-center justify-between rounded-full border border-white/10 bg-slate-950/45 px-4 py-2 text-xs uppercase tracking-[0.3em] text-slate-300 backdrop-blur">
-              <span>Portfolio</span>
-              <span className="text-brand-100">Premium Mode</span>
+              <span>Portfólio</span>
+              <span className="text-brand-100">Modo Premium</span>
             </div>
             <div className="overflow-hidden rounded-[1.6rem] border border-white/10 bg-slate-950/40 pt-16">
               <img
